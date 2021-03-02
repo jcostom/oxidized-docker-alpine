@@ -1,5 +1,7 @@
 # Oxidized: Alpine Linux based Docker image
 
+*Note*: I forked this image from b3vis/oxidized, which seems to be a fork of alectolytic/oxidized. I really just updated the image to run on a more recent version of Alpine.
+
 This is a docker image for the amazing [oxidized](https://github.com/ytti/oxidized) tool. For how to configure oxidized see the oxidized [README.md](https://github.com/ytti/oxidized/blob/master/README.md) file.
 
 This image exists as a smaller footprint version of the [official image](https://hub.docker.com/u/oxidized/).

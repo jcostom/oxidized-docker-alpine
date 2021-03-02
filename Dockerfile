@@ -1,12 +1,11 @@
-FROM alpine
-MAINTAINER b3vis
+FROM alpine:3.13
+
 RUN apk --no-cache add --virtual oxidized-runtime \
-        ruby git libssh2 sqlite-libs libressl \
+        ruby git libssh2 sqlite-libs libressl icu \
     && apk --no-cache add --virtual oxidized-build-deps \
-        ruby-dev cmake make libssh2-dev g++ sqlite-dev libressl-dev \
+        ruby-dev cmake make libssh2-dev g++ sqlite-dev libressl-dev icu-dev \
     && gem install \
-        --no-ri \
-        --no-rdoc \
+        --no-document \
         json \
         aws-sdk \
         slack-api \
