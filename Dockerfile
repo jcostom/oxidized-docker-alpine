@@ -20,6 +20,7 @@ RUN apk --no-cache add --virtual oxidized-runtime \
         aws-sdk \
         slack-api \
         io-console \
+        net-ssh \
         oxidized \
         oxidized-script \
         oxidized-web \
